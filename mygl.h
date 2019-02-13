@@ -30,6 +30,7 @@ void PutPixel(int x, int y, cor cor){
 }
 
 //------------------------
+
 void DrawLine(int x1, int y1, int x2, int y2, cor c1, cor c2) {
  
 int d,dx,dy,x,y,incx,incy,incE, incNE;
