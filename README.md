@@ -28,15 +28,10 @@ Função PutPixel escrita em linguagem C:
 
 
 
-• DrawLine: Função que rasteriza uma linha na tela, recebendo como parâmetros os seus vértices e sua cor e atraves so algoritimo de Bresenham. 
-(inicial e final, representados respectivamente pelas tuplas (x0,y0) e (x1,y1)), e as cores (no 
-formato RGBA) de cada vértice. As cores dos pixels ao longo da linha rasterizada devem ser 
-obtidas através da interpolação linear das cores dos vértices. O algoritmo de rasterização a ser 
-implementado deve ser o algoritmo de Bresenham! 
-  
-Para a rasterização de uma linha utilizaremos o algoritmo de Bresheram que recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta. Para a rasterização de uma linha Bresheram recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta, utilizando apenas variáveis inteiras e permite que o cálculo de um próximo ponto seja feito de forma incremental. 
- 
+• DrawLine: Função que rasteriza uma linha na tela, recebendo como parâmetros os seus vértices e sua cor e atraves so algoritimo de Bresenham. Para a rasterização de uma linha Bresheram recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta. utilizando apenas variáveis inteiras e permite que o cálculo de um próximo ponto seja feito de forma incremental. 
+https://github.com/WandeilsonFerreira/ICGAtividade01/issues/2#issue-410072051
 
+ 
 
 
 
