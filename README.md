@@ -12,6 +12,7 @@ Para a rasterização de um pixel utilizaremos o ponteiro Fbptr que passa as coo
 ![putpixel](https://user-images.githubusercontent.com/45613409/52755998-accef400-2fde-11e9-948e-cebb5dd6463a.png)
 
 Trecho de codigo da funcao PutPixel, chamada da função e resultado. 
+
 • DrawLine: Função que rasteriza uma linha na tela, recebendo como parâmetros os seus vértices e sua cor e atraves so algoritimo de Bresenham. Para a rasterização de uma linha Bresheram recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta. utilizando apenas variáveis inteiras e permite que o cálculo de um próximo ponto seja feito de forma incremental.  
 
 ![funcao drawline](https://user-images.githubusercontent.com/45613409/52754823-a179c980-2fda-11e9-96db-76da7a7e39b1.png)
