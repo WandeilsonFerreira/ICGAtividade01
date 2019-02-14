@@ -35,69 +35,8 @@ Função PutPixel escrita em linguagem C:
 
 Trecho de codigo da funcao drawline, chamada da função e resultado. 
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Assumindo que o pixel que acabou de ser selecionado é P, em (xp,yp), e o próximo deve ser escolhido entre o pixel à direita superior a M (pixel S) e o pixel à direita inferior a M (pixel I). Seja Q o ponto de intersecção entre a reta e a coluna x = xp +1 da malha, e M o ponto intermediário entre os
-pixels S e I, o que se faz é observar de que lado da reta está o ponto M. É fácil verificar que se M está acima de Q, o pixel I está mais próximo da reta; se M está abaixo de Q, S está mais próximo.
-
-O algoritmo se torna pouco eficiente para traçar retas em todas os quadrantes, uma vez que temos que utilizar de uma variável de decisão  ( d = (2*dx - dy);) para determinar em que octante a reta será traçada .   
-
-
-
-
-
-
-
-
-
-
-
-Utilizaremos a variável de decisao para verificar em em qual lado da reta o pixel será plotado,  da seguinte forma:
-Se d>0 incrementa - se  NE;
-Se d<0 incrementa E;
-Se d=0 pode ser o E. 
-O incremento de NE e N é feito pelas seguintes expressões, respectivamente:  
-           incNE=2*(dy-dx);
-           incE=2dy;
-Com isso poderemos traçar retas em qualquer octante da tela de exibição.
-Trecho do código da função Drawline que mostra como é calculada a variável de decisão: 
-
-
-
-
-
-
-
-
-
-
-
-
-.  
-• DrawTriangle: Função que desenha as arestas de um triângulo na tela, recebendo como parâmetros as posições dos três vértices (xa,ya), (xb,yb) e (xc,yc) bem como as cores (RGBA) de cada um dos vértices. As cores dos pixels das arestas do triângulo devem ser obtidas através da interpolação linear das cores de seus vértices. Não é necessário o preenchimento do triângulo!
-
-Para a criação da função DrawTriangle foi utilizada a função DrawLine passando com referencia os pontos de cada vértice do triangulo desejado, ligando o ponto 1 ao ponto 2, o ponto 2 ao ponto 3 e o ponto 3 ao ponto 1.
+   
+• DrawTriangle: Função que desenha as arestas de um triângulo na tela, recebendo como parâmetros as posições dos três vértices e a sua cor. Para a criação da função DrawTriangle foi utilizada a função DrawLine passando com referencia os pontos de cada vértice do triangulo desejado, ligando o ponto 1 ao ponto 2, o ponto 2 ao ponto 3 e o ponto 3 ao ponto 1.
 
 
 
