@@ -7,7 +7,9 @@ Como os atuais sistemas operacionais não permitem que o usuário tenha acesso d
 
 • PutPixel: Função que rasteriza um ponto na memória de vídeo, recebendo como parâmetros a posição do pixel na tela (x,y) e sua cor (RGBA). 
 
-Para a rasterização de um pixel utilizaremos o ponteiro Fbptr que foi disponibilizado no framework, passando para a função PutPixel as coordenadas do ponto (x, y) bem como a cor desejada (R,G,B,A); Para a implementação de tal função utilizamos a seguinte função matemática: x*4 + 4*y*h para localizar o local de impressão do pixel em uma tela delimitada.
+Para a rasterização de um pixel utilizaremos o ponteiro Fbptr que passa as coordenadas do ponto (x,y) e sua cor.  
+
+Dificuldades: A principal deificuldade foi na utilização do framework, 
 
 Função PutPixel escrita em linguagem C: 
 
@@ -26,17 +28,14 @@ Função PutPixel escrita em linguagem C:
 
 
 
-• DrawLine: Função que rasteriza uma linha na tela, recebendo como parâmetros os seus vértices 
+• DrawLine: Função que rasteriza uma linha na tela, recebendo como parâmetros os seus vértices e sua cor e atraves so algoritimo de Bresenham. 
 (inicial e final, representados respectivamente pelas tuplas (x0,y0) e (x1,y1)), e as cores (no 
 formato RGBA) de cada vértice. As cores dos pixels ao longo da linha rasterizada devem ser 
 obtidas através da interpolação linear das cores dos vértices. O algoritmo de rasterização a ser 
 implementado deve ser o algoritmo de Bresenham! 
   
-Para a rasterização de uma linha utilizaremos o algoritmo de Bresheram que recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta. O Algoritmo de Bresenham é um algoritmo clássico para traçar curvas, ele usa apenas variáveis inteiras e permite que o cálculo de um próximo ponto seja feito de forma incremental. 
-
-Suponha que a tela possua igual densidade de pixels na horizontal e na vertical. O algoritmo assume que a inclinação da linha está entre zero (0) e um (1), (outras inclinações podem ser tratadas por
-simetria). O ponto (x1,y1) seria o inferior esquerdo, e (x2,y2) o superior direito. 
-
+Para a rasterização de uma linha utilizaremos o algoritmo de Bresheram que recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta. Para a rasterização de uma linha Bresheram recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta, utilizando apenas variáveis inteiras e permite que o cálculo de um próximo ponto seja feito de forma incremental. 
+ 
 
 
 
