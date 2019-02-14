@@ -9,25 +9,9 @@ Como os atuais sistemas operacionais não permitem que o usuário tenha acesso d
 
 Para a rasterização de um pixel utilizaremos o ponteiro Fbptr que passa as coordenadas do ponto (x,y) e sua cor.  
 
-Dificuldades: A principal deificuldade foi na utilização do framework, 
+![putpixel](https://user-images.githubusercontent.com/45613409/52755998-accef400-2fde-11e9-948e-cebb5dd6463a.png)
 
-Função PutPixel escrita em linguagem C: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Trecho de codigo da funcao PutPixel, chamada da função e resultado. 
 • DrawLine: Função que rasteriza uma linha na tela, recebendo como parâmetros os seus vértices e sua cor e atraves so algoritimo de Bresenham. Para a rasterização de uma linha Bresheram recebe como parâmetros as coordenadas dos pontos inicial e final para traçar a reta. utilizando apenas variáveis inteiras e permite que o cálculo de um próximo ponto seja feito de forma incremental.  
 
 ![funcao drawline](https://user-images.githubusercontent.com/45613409/52754823-a179c980-2fda-11e9-96db-76da7a7e39b1.png)
@@ -38,42 +22,19 @@ Trecho de codigo da funcao drawline, chamada da função e resultado.
    
 • DrawTriangle: Função que desenha as arestas de um triângulo na tela, recebendo como parâmetros as posições dos três vértices e a sua cor. Para a criação da função DrawTriangle foi utilizada a função DrawLine passando com referencia os pontos de cada vértice do triangulo desejado, ligando o ponto 1 ao ponto 2, o ponto 2 ao ponto 3 e o ponto 3 ao ponto 1.
 
+![drawtriangule](https://user-images.githubusercontent.com/45613409/52756043-db4ccf00-2fde-11e9-80d6-b52a9f0e0149.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
+Trecho de codigo da funcao drawTriangule, chamada da função e resultado. 
+ 
 
 Dificuldades 
   
 No desenvolvimento do trabalho a maior dificuldade foi na criação da função DrawLine, uma vez que o algoritmo de Bresenham visto em sala tratava apenas do primeiro octante e não desenhava as retas para os demais. Após realizar uma pesquisa vi que o problema poderia ser resolvido utilizando de um artifício, variável de decisão para descobrir em que octante está o ponto inicial, para o desenvolvimento do resto da função. 
 
+![captura de tela de 2019-02-13 21-11-44](https://user-images.githubusercontent.com/45613409/52756090-046d5f80-2fdf-11e9-9d11-cc91def1cb48.png)
+
 Resultado Final
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 Referências 
 
 [1]https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
