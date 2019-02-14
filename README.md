@@ -32,9 +32,10 @@ Dificuldades 
   
 No desenvolvimento do trabalho a maior dificuldade foi na criação da função DrawLine, uma vez que o algoritmo de Bresenham visto em sala tratava apenas do primeiro octante e não desenhava as retas para os demais. Após realizar uma pesquisa vi que o problema poderia ser resolvido utilizando de um artifício, variável de decisão para descobrir em que octante está o ponto inicial, para o desenvolvimento do resto da função. 
 
+Resultado Final
+
 ![captura de tela de 2019-02-13 21-11-44](https://user-images.githubusercontent.com/45613409/52756090-046d5f80-2fdf-11e9-9d11-cc91def1cb48.png)
 
-Resultado Final
  
 Referências 
 
