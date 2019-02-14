@@ -3,16 +3,13 @@
 	
 	Atividade 01: Nesta primeira atividade deve-se implementar algoritmos fundamentais utilizados em computação gráfica, utilizando a rasterização de pontos e linhas, onde deverão ser desenhados triângulos através da rasterização das linhas .
 
-Como os atuais sistemas operacionais não permitem que o usuário tenha acesso direto à memória, foi disponibilizado uma framework para tal acesso. Foi definido a utilização apenas deste framework, dispensando o uso de bibliotecas externas e API's para o desenvolvimento da atividade. Para a atividade deve ser utilizado apenas algoritmos em C/C++, fazendo a escrita na memória utilizando apenas o ponteiro FBptr, que aponta para o primeiro byte da memória de vídeo simulada.
+Como os atuais sistemas operacionais não permitem que o usuário tenha acesso direto à memória, foi disponibilizado uma framework para tal acesso. Para este trabalho serão desenvolvidas as seguintes funções: 
 
-Para este trabalho serão desenvolvidas as seguintes funções: 
-
-• PutPixel: Função que rasteriza um ponto na memória de vídeo, recebendo como parâmetros a 
-posição do pixel na tela (x,y) e sua cor (RGBA). 
+• PutPixel: Função que rasteriza um ponto na memória de vídeo, recebendo como parâmetros a posição do pixel na tela (x,y) e sua cor (RGBA). 
 
 Para a rasterização de um pixel utilizaremos o ponteiro Fbptr que foi disponibilizado no framework, passando para a função PutPixel as coordenadas do ponto (x, y) bem como a cor desejada (R,G,B,A); Para a implementação de tal função utilizamos a seguinte função matemática: x*4 + 4*y*h para localizar o local de impressão do pixel em uma tela delimitada.
 
-Função PutPixel escrita em linguagem C: 
+Função PutPixel escrita em linguagem C: 
 
 
 
